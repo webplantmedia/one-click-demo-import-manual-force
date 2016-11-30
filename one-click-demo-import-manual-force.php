@@ -12,8 +12,8 @@ Version: 0.1
 Author URI: http://webplantmedia.com
 */
 
-function ocdimf_admin_init() {
+function ocdimf_remove_theme_import_functions() {
 	remove_filter( 'pt-ocdi/import_files', 'wpcanvas2_ocdi_import_files' );
 	remove_action( 'pt-ocdi/before_widgets_import', 'wpcanvas2_ocdi_before_widgets_import' );
 }
-add_action( 'plugins_loaded', 'ocdimf_admin_init' );
+add_action( 'after_setup_theme', 'ocdimf_remove_theme_import_functions' );
