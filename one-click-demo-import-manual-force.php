@@ -8,7 +8,7 @@ Plugin Name: One Click Demo Import Manual Force
 Plugin URI: http://webplantmedia.com
 Description: Force manual upload of import files
 Author: Chris Baldelomar
-Version: 0.1
+Version: 1.0
 Author URI: http://webplantmedia.com
 */
 
